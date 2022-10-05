@@ -5,7 +5,6 @@ const parsedSettings =
 const throttle = require('lodash.throttle');
 
 formEl.addEventListener('input', throttle(onFormInput, 500));
-
 formEl.addEventListener('submit', onFormSubmit);
 
 formEl.elements.email.value = parsedSettings.email ?? '';
